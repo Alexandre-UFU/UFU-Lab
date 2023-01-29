@@ -7,7 +7,6 @@ int main(void) {
   int amountToCheck;
   printf("Enter the amount you wish verify: ");
   scanf("%d", &amountToCheck);
-
   int allValues[amountToCheck];
   int max = 0, min = 0;
   initializeNumbers(allValues, amountToCheck, &max, &min);
@@ -15,6 +14,7 @@ int main(void) {
   printNumbers(allValues, amountToCheck, max, min);
   return 0;
 }
+
 void initializeNumbers(int *values, int amountToCheck, int *max, int *min) {
   for (int index = 0; index < amountToCheck; index++) {
     printf("Enter the amount: ");
